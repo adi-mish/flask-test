@@ -10,5 +10,9 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/info')
+def info():
+    return render_template('info.html')
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug = True)
